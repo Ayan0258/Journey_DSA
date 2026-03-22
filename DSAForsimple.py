@@ -89,14 +89,38 @@ N-th Tribonacci Number
 
 """
 
-def tribonacci(n):
-    if n == 0:
-        return 0
-    if n == 1 or n == 2:
-        return 1
+# def tribonacci(n):
+#     if n == 0:
+#         return 0
+#     if n == 1 or n == 2:
+#         return 1
     
-    return tribonacci(n-1) + tribonacci(n-2) + tribonacci(n-3)
+#     return tribonacci(n-1) + tribonacci(n-2) + tribonacci(n-3)
 
 
-n = int(input("Enter n: "))
-print(tribonacci(n))
+# n = int(input("Enter n: "))
+# print(tribonacci(n))
+
+
+"""
+Power of 2
+
+"""
+# n = int(input("Enter your number: "))
+
+# if n<= 0:
+#     print("This is not power of 2")
+
+# else:
+#     while n%2 == 0:
+#         n = n//2
+
+#     if n==1:
+#         print("Its power of 2")
+
+#     else:
+#         print("Its not power of 2")
+
+
+# //// recursion///
+
