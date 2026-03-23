@@ -124,3 +124,35 @@ Power of 2
 
 # //// recursion///
 
+# def poweroftwo(n):
+#     if n<=0:
+#         return False
+#     if n==1:
+#         return True
+#     if n % 2 != 0:
+#         return False
+#     return poweroftwo(n//2)
+
+# n = int(input("Enter number: "))
+# print(poweroftwo(n))
+
+
+"""
+the power of 3
+
+"""
+
+# def thepowerofthree(n):
+#     if n<= 0:
+#         return False
+#     if n == 1:
+#         return True
+#     if n % 3 != 0:
+#         return False
+    
+#     return thepowerofthree(n // 3)
+
+# n = int(input("Enter number: "))
+# print(thepowerofthree(n))
+
+
