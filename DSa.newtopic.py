@@ -27,17 +27,46 @@ Power of (x,n)
 
 """
 
-def thepowerof(x, n):
+# def thepowerof(x, n):
+#     if n == 0:
+#         return 1
+#     half = thepowerof(x, n //2 )
+
+#     if n % 2 == 0:
+#         return half * half
+#     else:
+#         return x * half * half
+    
+# x = int(input("Enter base: "))
+# n = int(input("Enter power: "))
+
+# print(thepowerof(x,n))
+
+
+# //if the power is negetive//
+
+
+
+def power(x, n):
+    # handle negative power
+    if n < 0:
+        return 1 / power(x, -n)
+
+    # base case
     if n == 0:
         return 1
-    half = thepowerof(x, n //2 )
+
+    # recursive step
+    half = power(x, n // 2)
 
     if n % 2 == 0:
         return half * half
     else:
         return x * half * half
-    
+
+
+# input
 x = int(input("Enter base: "))
 n = int(input("Enter power: "))
 
-print(thepowerof(x,n))
+print(power(x, n))
