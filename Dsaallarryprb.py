@@ -16,18 +16,41 @@ dsa question.
 
 remove dublicates from shorted arry
 """
-nums = [1,2,4,56,2,1,1,2,3,4,5,56,6,7,34,4,4]
+# nums = [1,2,4,56,2,1,1,2,3,4,5,56,6,7,34,4,4]
 
-nums.sort()   
+# nums.sort()   
 
-n = len(nums)
+# n = len(nums)
 
-start = 0
+# start = 0
 
-for i in range(1, n):
-    if nums[i] != nums[start]:
-        start += 1
-        nums[start] = nums[i]
+# for i in range(1, n):
+#     if nums[i] != nums[start]:
+#         start += 1
+#         nums[start] = nums[i]
 
-print("Unique count:", start + 1)
-print("Unique elements:", nums[:start + 1])
+# print("Unique count:", start + 1)
+# print("Unique elements:", nums[:start + 1])
+
+
+"""
+Remove duplicayes from sorted arry2
+
+"""
+
+
+# nums = [1,1,1,2,2,3]
+
+# start = 2   # first 2 elements always allowed
+
+# for i in range(2, len(nums)):
+#     if nums[i] != nums[start - 2]:
+#         nums[start] = nums[i]
+#         start += 1
+
+# print(nums[:start])
+
+"""
+
+sort arry by parity
+"""
